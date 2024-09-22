@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Conway's Game of Life - Introduction</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Introduction</a></li>
+      <li><a href="still_lifes.html">Still Lifes</a></li>
+      <li><a href="oscillators.html">Oscillators</a></li>
+      <li><a href="spaceships.html">Spaceships</a></li>
+      <li><a href="advanced_patterns.html">Advanced Patterns</a></li>
+    </ul>
+  </nav>
+
+  <h1>Conway's Game of Life</h1>
+
+  <p>Welcome to the Game of Life! This is a cellular automaton devised by mathematician John Horton Conway.</p>
+  <p>The game consists of a grid of cells that evolve through generations according to a set of simple rules.</p>
+
+  <canvas id="gameCanvas"></canvas>
+
+  <div class="controls">
+    <button id="startBtn">Start</button>
+    <button id="pauseBtn">Pause</button>
+    <button id="clearBtn">Clear</button>
+    <button id="saveBtn">Save Pattern</button>
+    <button id="loadBtn">Load Pattern</button>
+  </div>
+
+  <div class="speed-control">
+    <label for="speedRange">Simulation Speed:</label>
+    <input type="range" id="speedRange" min="1" max="20" value="10">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
